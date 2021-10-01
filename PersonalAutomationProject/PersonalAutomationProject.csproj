@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NUnitTestAdapter.2.3.0\build\NUnitTestAdapter.props" Condition="Exists('..\packages\NUnitTestAdapter.2.3.0\build\NUnitTestAdapter.props')" />
+  <Import Project="..\packages\NUnit.3.13.2\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.13.2\build\NUnit.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">anycpu</Platform>
@@ -57,11 +59,15 @@
       <HintPath>..\packages\Selenium.Helper.1.0.1\lib\net40\Selenium.Helper.dll</HintPath>
     </Reference>
     <Reference Include="System.Configuration" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.3.13.2\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestAutomation\Selenium.cs" />
     <Compile Include="TestAutomation\OpenQA.cs" />
+    <Compile Include="TestAutomation\NUnit.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\packages.config" />

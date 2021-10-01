@@ -10,7 +10,11 @@ using Selenium.WebDriver.WaitExtensions.WaitConditions;
 
 namespace PersonalAutomationProject
 {
-    class TestAutomationSampe
+    public class GettingStarted
     {
+        public static void Main(string[] args)
+        {
+
+        }
     }
-}
+} 
