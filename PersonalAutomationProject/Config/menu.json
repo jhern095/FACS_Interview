@@ -1,0 +1,75 @@
+﻿[
+    {
+        "ItemId": "00000000-0000-0000-0000-000000000000",
+        "ItemName": "首页",
+        "Url": "Default.aspx",
+        "ClassName": " fa fa-home   "
+    },
+    {
+        "ItemId": "EAC4996A-290F-4A0D-A02C-B3B9C177963F",
+        "ItemName": "验货",
+        "ClassName": "fa fa-codepen ",
+        "Url": "/inspection.aspx"
+    },
+    {
+        "ItemId": "9282FB58-91C1-4967-B90A-4D78C8E65F48",
+        "ItemName": "入库",
+        "Url": "/instock.aspx",
+        "ClassName": "fa fa-cube "
+    },
+    {
+        "ItemId": "62412549-909E-42BA-AD5B-ECBADBDF874B",
+        "ItemName": "出库",
+        "Url": "/outstock.aspx",
+        "ClassName": "fa fa-cubes "
+    },
+    {
+        "ItemId": "EEEEEEEE-EEEE-EEEE-EEEE-EEEEEEEEEEEEE",
+        "ItemName": "xx",
+        "Url": "xx",
+        "ClassName": " line m-n  "
+    },
+     {
+        "ItemId": "48C9A3CD-B1A3-4A43-98F5-0C41F001AB56",
+        "ItemName": "报表查询 ",
+        "Url": "/report.aspx",
+        "ClassName": "fa fa-report "
+    },
+
+    {
+        "ItemId": "EEEEEEEE-EEEE-EEEE-EEEE-EEEEEEEEEEEEE",
+        "ItemName": "xx",
+        "Url": "xx",
+        "ClassName": " line m-n  "
+    },
+    {
+        "ItemId": "0953BD20-03D6-479E-A4D8-52C38E92864C",
+        "ItemName": "角色管理",
+        "Url": "/roleinfo.aspx",
+        "ClassName": "fa fa-users "
+    },
+    {
+        "ItemId": "37472585-87D2-47A4-9BA5-78E794B4B0E9",
+        "ItemName": "用户管理",
+        "Url": "/admininfo.aspx",
+        "ClassName": "fa fa-users "
+    },
+    {
+        "ItemId": "CE3FDE48-7C93-4200-A8BC-A0A1BF54D64B",
+        "ItemName": "字典管理",
+        "Url": "/dictionary.aspx",
+        "ClassName": "fa fa-book "
+    },
+    {
+        "ItemId": "9F331AA4-DC8A-496F-A5B3-E28F8E79BE2D",
+        "ItemName": "设备管理",
+        "Url": "/device.aspx",
+        "ClassName": "fa fa-book "
+    },
+    {
+        "ItemId": "713D6727-D21E-4197-AF56-367D085DF911",
+        "ItemName": "客户管理",
+        "Url": "/customer.aspx",
+        "ClassName": "fa   fa-user-md "
+    }
+]

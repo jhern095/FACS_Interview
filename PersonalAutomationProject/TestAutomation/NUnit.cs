@@ -17,7 +17,9 @@ namespace PersonalAutomationProject.TestAutomation
             [SetUp]
             public void startBrowser()
             {
-                driver = new ChromeDriver("/Users/HernandezJeremy/Documents/Personals/PersonalAutomationProject/packages/chromedriver");
+            //If you want to hard-code the path, set it here. Otherwise, we set the path to chromedriver on the local machine.
+            //driver = new ChromeDriver("/Users/HernandezJeremy/Documents/Personals/PersonalAutomationProject/packages/chromedriver");
+            driver = new ChromeDriver();
             }
 
             [Test]

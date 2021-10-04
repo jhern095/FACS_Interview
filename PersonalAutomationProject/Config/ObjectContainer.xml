@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ObjectContents>
+  <Object Name="JUnit" IsSigleton="true">
+    <Type>
+      <![CDATA[JUnit.Web.JunitHelper,JUnit.WebCommon]]>
+    </Type>
+    <MapTo>
+      <![CDATA[JUnit.Common.IJUnit,JUnit.Common]]>
+    </MapTo>
+  </Object>
+  <!--<Object Name="IJsFormater" IsSigleton="true">
+    <Type>
+      <![CDATA[JUnit.Web.IJsFormater,JUnit.WebCommon]]>
+    </Type>
+    <MapTo>
+      <![CDATA[JUnit.Common.IJUnit,JUnit.Common]]>
+    </MapTo>
+  </Object>-->
+  <Object Name="DbContnet" IsSigleton="true">
+    <Type>
+      <![CDATA[JUnit.Common.DataContext,JUnit.Common]]>
+    </Type>
+    <MapTo>
+      <![CDATA[JUnit.Common.IDataContext,JUnit.Common]]>
+    </MapTo>
+  </Object>
+</ObjectContents>
