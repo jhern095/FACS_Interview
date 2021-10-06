@@ -18,39 +18,50 @@ using OpenQA.Selenium.Support.UI;
 using NUnit.Framework.Internal.Builders;
 using NUnit.Framework;
 
+using PersonalAutomationProject.TestAutomation.PageObjects;
 
 namespace BrowserSetup
 {
-    public class SetupBrowser
+    public class SetupBrowser : GooglePageObjects
     {
         //Another method to instantiate the Driver.
         //ChromeDriver driver = new ChromeDriver("/Users/HernandezJeremy/Documents/Personals/PersonalAutomationProject/PersonalAutomationProject/Drivers/");
 
-        IWebDriver driver;
+        public IWebDriver driver = new ChromeDriver();
 
-        [SetUp]
-        public IWebDriver startBrowser()
+        public IWebDriver startBrowserTest()
         {
-            driver = new ChromeDriver(@"/Users/HernandezJeremy/Documents/Personals/PersonalAutomationProject/PersonalAutomationProject/Drivers/");
             driver.Wait(10000);
             driver.Manage().Window.Maximize();
             return driver;
         }
-        [Test]
-        public void testSetup()
+
+        public IWebDriver navigateToGoogle()
         {
-            driver.Url = "http://google.com";
-        }
-        [TearDown]
-        public void closeBrowser()
-        {
-            driver.Close();
+            driver.Url = "https://google.com";
+            driver.Navigate().GoToUrl("https://google.com");
+            driver.Wait(10000);
+            driver.Manage().Window.Maximize();
+            return driver;
         }
 
-        public void launchBrower()
+        public IWebDriver navigateToIndeed()
+        {
+            driver.Url = "https://indeed.com";
+            driver.Navigate().GoToUrl("https://indeed.com");
+            driver.Wait(10000);
+            driver.Manage().Window.Maximize();
+            return driver;
+        }
+
+        public void browserConfig()
         {
             ChromeOptions options = new ChromeOptions();
             
+        }
+        public void closeBrowser()
+        {
+            driver.Close();
         }
     }
 }

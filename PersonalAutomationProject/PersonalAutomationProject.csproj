@@ -110,8 +110,11 @@
     <Compile Include="TestAutomation\Tests\Main.cs" />
     <Compile Include="TestAutomation\DriverSetup\BrowserSetup.cs" />
     <Compile Include="TestAutomation\PageObjects\GooglePageObjects.cs" />
-    <Compile Include="TestAutomation\Tests\NUnit.cs" />
+    <Compile Include="TestAutomation\Tests\GoogleTests.cs" />
     <Compile Include="TestAutomation\Tests\JUnit.cs" />
+    <Compile Include="TestAutomation\Tests\IndeedTests.cs" />
+    <Compile Include="TestAutomation\PageObjects\IndeedObjects.cs" />
+    <Compile Include="TestAutomation\PageObjects\IndeedElements.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\packages.config" />
@@ -119,6 +122,7 @@
     <None Include="Config\ObjectContainer.xml" />
     <None Include="Config\menu.json" />
     <None Include="Config\conn.config" />
+    <None Include="readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TestAutomation\" />
