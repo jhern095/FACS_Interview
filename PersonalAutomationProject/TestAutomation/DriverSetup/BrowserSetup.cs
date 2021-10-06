@@ -32,6 +32,8 @@ namespace BrowserSetup
         public void startBrowser()
         {
             driver = new ChromeDriver(@"/Users/HernandezJeremy/Documents/Personals/PersonalAutomationProject/PersonalAutomationProject/Drivers/");
+            driver.Wait(10000);
+            driver.Manage().Window.Maximize();
         }
         [Test]
         public void testSetup()
