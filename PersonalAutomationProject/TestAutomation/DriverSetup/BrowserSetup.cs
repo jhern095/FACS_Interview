@@ -29,11 +29,12 @@ namespace BrowserSetup
         IWebDriver driver;
 
         [SetUp]
-        public void startBrowser()
+        public IWebDriver startBrowser()
         {
             driver = new ChromeDriver(@"/Users/HernandezJeremy/Documents/Personals/PersonalAutomationProject/PersonalAutomationProject/Drivers/");
             driver.Wait(10000);
             driver.Manage().Window.Maximize();
+            return driver;
         }
         [Test]
         public void testSetup()

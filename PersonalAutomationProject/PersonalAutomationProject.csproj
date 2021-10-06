@@ -107,11 +107,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TestAutomation\Tests\GoogleTests.cs" />
+    <Compile Include="TestAutomation\Tests\Main.cs" />
     <Compile Include="TestAutomation\DriverSetup\BrowserSetup.cs" />
-    <Compile Include="TestAutomation\DriverSetup\JUnit.cs" />
-    <Compile Include="TestAutomation\DriverSetup\NUnit.cs" />
     <Compile Include="TestAutomation\PageObjects\GooglePageObjects.cs" />
+    <Compile Include="TestAutomation\Tests\NUnit.cs" />
+    <Compile Include="TestAutomation\Tests\JUnit.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\packages.config" />
