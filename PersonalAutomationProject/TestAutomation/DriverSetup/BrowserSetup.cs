@@ -8,7 +8,6 @@ using Selenium.Helper;
 using Selenium.Internal.SeleniumEmulation;
 using SeleniumExtras.PageObjects;
 using Selenium.WebDriver.WaitExtensions;
-using Selenium.WebDriver.Extensions;
 using Selenium.WebDriver.WaitExtensions.WaitTypeSelections;
 using Selenium.WebDriver.WaitExtensions.WaitConditions;
 using OpenQA.Selenium;
@@ -22,7 +21,7 @@ using PersonalAutomationProject.TestAutomation.PageObjects;
 
 namespace BrowserSetup
 {
-    public class SetupBrowser : GooglePageObjects
+    public class SetupBrowser : InputData
     {
         //Another method to instantiate the Driver.
         //ChromeDriver driver = new ChromeDriver("/Users/HernandezJeremy/Documents/Personals/PersonalAutomationProject/PersonalAutomationProject/Drivers/");
@@ -36,19 +35,10 @@ namespace BrowserSetup
             return driver;
         }
 
-        public IWebDriver navigateToGoogle()
+        public IWebDriver navigateToFACS()
         {
-            driver.Url = "https://google.com";
-            driver.Navigate().GoToUrl("https://google.com");
-            driver.Wait(10000);
-            driver.Manage().Window.Maximize();
-            return driver;
-        }
-
-        public IWebDriver navigateToIndeed()
-        {
-            driver.Url = "https://indeed.com";
-            driver.Navigate().GoToUrl("https://indeed.com");
+            driver.Url = "https://apiqa.facsware.com/login";
+            driver.Navigate().GoToUrl("https://apiqa.facsware.com/login");
             driver.Wait(10000);
             driver.Manage().Window.Maximize();
             return driver;

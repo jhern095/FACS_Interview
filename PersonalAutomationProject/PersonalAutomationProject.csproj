@@ -109,12 +109,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestAutomation\Tests\Main.cs" />
     <Compile Include="TestAutomation\DriverSetup\BrowserSetup.cs" />
-    <Compile Include="TestAutomation\PageObjects\GooglePageObjects.cs" />
-    <Compile Include="TestAutomation\Tests\GoogleTests.cs" />
-    <Compile Include="TestAutomation\Tests\JUnit.cs" />
-    <Compile Include="TestAutomation\Tests\IndeedTests.cs" />
-    <Compile Include="TestAutomation\PageObjects\IndeedObjects.cs" />
-    <Compile Include="TestAutomation\PageObjects\IndeedElements.cs" />
+    <Compile Include="TestAutomation\PageObjects\FACsLoginStepFunctions.cs" />
+    <Compile Include="TestAutomation\Tests\FACsTests.cs" />
+    <Compile Include="TestAutomation\PageObjects\InputData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\packages.config" />
